@@ -19,8 +19,8 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Aqua code scanning (SCA,IaC and SAST)
-#        uses: docker://aquasec/aqua-scanner
-        uses: docker://aquasec/aqua-scanner:latest-limited
+        uses: docker://aquasec/aqua-scanner
+#        uses: docker://aquasec/aqua-scanner:latest-limited
         with:
           args: trivy fs --scanners config,vuln,secret --sast .
         env:
