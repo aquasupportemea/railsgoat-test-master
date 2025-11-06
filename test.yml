@@ -1,0 +1,5 @@
+repositories:
+  - type: maven-repository
+    url: https://artifacts.hq.redbull.com/repository/maven-all
+    username: ${{ secrets.S_CID_NEXUS_USERNAME }}
+    password: ${{ secrets.S_CID_NEXUS_PASSWORD }}
